@@ -35,6 +35,7 @@ public class ProfilerDemoBench {
 		Blackhole.consumeCPU(tokens);
 
 		long id = Thread.currentThread().getId();
+		
 		doSomething(id);
 	}
 
