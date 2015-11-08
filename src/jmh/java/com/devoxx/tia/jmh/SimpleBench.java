@@ -17,7 +17,7 @@ public class SimpleBench {
 
 	}
 
-	private String input = "x==y";
+	private String input = "crowd==devoxx";
 	private Pattern pattern = Pattern.compile("==");
 	
 	@Benchmark

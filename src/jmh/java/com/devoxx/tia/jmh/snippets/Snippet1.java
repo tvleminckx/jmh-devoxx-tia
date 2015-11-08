@@ -24,5 +24,4 @@ public class Snippet1 {
 	public void tearDownMyBenchMark() {
 	}
 
-	
 }
