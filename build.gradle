@@ -24,7 +24,7 @@ dependencies {
 
 jmh {
 	
-	include = System.properties['testToExecute']
+	include = System.properties['testToExecute']!=null?System.properties['testToExecute']:'.*Simple*'
 	
 	//include = '.*Simple*'
 	//include = '.*Profiler*'
