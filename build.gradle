@@ -43,7 +43,7 @@ jmh {
 	// jvmArgsAppend = '-X'//'Custom JVM args to use when forking (append these)'
 	// jvmArgsPrepend = 'Custom JVM args to use when forking (prepend these)'
 	humanOutputFile = project.file("${project.buildDir}/reports/jmh/human.txt") // human-readable output file
-	resultsFile = project.file("${project.buildDir}/reports/jmh/results.txt") // results file
+	resultsFile = project.file("${project.buildDir}/reports/jmh/results.csv") // results file
 	operationsPerInvocation = 1 // Operations per invocation.
 	// benchmarkParameters =  [:] // Benchmark parameters.
 	profilers = ['COMP', 'STACK'] //['COMP','GC', 'STACK','CL'] // Use profilers to collect additional data.
