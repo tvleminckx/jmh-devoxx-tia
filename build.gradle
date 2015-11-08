@@ -46,7 +46,7 @@ jmh {
 	resultsFile = project.file("${project.buildDir}/reports/jmh/results.csv") // results file
 	operationsPerInvocation = 1 // Operations per invocation.
 	// benchmarkParameters =  [:] // Benchmark parameters.
-	profilers = ['COMP', 'STACK'] //['COMP','GC', 'STACK','CL'] // Use profilers to collect additional data.
+	profilers = System.properties['profilers']!=null?['COMP', 'STACK']:null //['COMP','GC', 'STACK','CL'] // Use profilers to collect additional data.
 	timeOnIteration = '10s' // Time to spend at each measurement iteration.
 	// resultFormat = 'TEXT' // Result format type (one of CSV, JSON, NONE, SCSV, TEXT)
 	// synchronizeIterations = false // Synchronize iterations?
